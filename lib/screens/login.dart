@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:prueba2/screens/cuenta.dart';
+import 'package:prueba2/screens/datos.dart';
 import 'package:prueba2/screens/registro.dart';
 
 class LoginPage extends StatelessWidget {
@@ -60,7 +61,7 @@ class LoginPage extends StatelessWidget {
                       );
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CuentaPage()),
+                        MaterialPageRoute(builder: (context) => Datos()),
                       );
                     } catch (e) {
                       ScaffoldMessenger.of(context).showSnackBar(
